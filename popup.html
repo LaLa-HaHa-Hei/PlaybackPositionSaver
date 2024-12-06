@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+    <style>
+        body {
+            width: 450px;
+            max-height: 500px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #d6d6d6;
+        }
+
+        /* 偶数行设置背景色 */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* 奇数行设置背景色 */
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table td button {
+            width: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>视频列表</h2>
+    <table id="timeList">
+        <tr>
+            <td>视频名称</td>
+            <td>播放位置</td>
+            <td>操作</td>
+        </tr>
+    </table>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

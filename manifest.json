@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Playback Position Saver",
+    "version": "1.0.0",
+    "description": "Saves and restores the playback position of MP4 and MP3 files.",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
